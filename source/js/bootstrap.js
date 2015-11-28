@@ -26,8 +26,10 @@ $(document).ready(function () {
   // Define Motion Sequence.
   motionIntegrator
     .add(motionMiddleWares.logo)
+    /*
     .add(motionMiddleWares.menu)
     .add(motionMiddleWares.postList)
+    */
     .add(motionMiddleWares.sidebar);
 
   // Bootstrap Motion.
