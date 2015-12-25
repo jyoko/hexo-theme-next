@@ -5,7 +5,7 @@
   width: 15px;
   height: 15px;
   padding: 5px;
-  background: $black-deep;
+  background: $sidebar-toggle-color;
   line-height: 0;
   z-index: $zindex-5;
   cursor: pointer;
@@ -27,7 +27,7 @@
   vertical-align: top;
   height: 2px;
   width: 100%;
-  background: white;
+  background: $sidebar-highlight;
   margin-top: 3px;
 
   &:first-child { margin-top: 0; }
@@ -41,13 +41,13 @@
   bottom: 0;
   z-index: $zindex-4;
   box-shadow: inset 0 2px 6px black;
-  background: $black-deep;
+  background: $sidebar-bg;
   -webkit-transform: translateZ(0); // http://stackoverflow.com/questions/17079857/position-fixed-broken-in-chrome-with-flash-behind
 
   a {
-    color: $grey-dark;
-    border-bottom-color: $black-light;
-    &:hover { color: $gainsboro; }
+    color: $sidebar-link;
+    border-bottom-color: $sidebar-link-under;
+    &:hover { color: $sidebar-link-hover; }
   }
 
   +tablet() {
@@ -61,7 +61,7 @@
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: $grey-dark;
+  color: $sidebar-head;
   text-align: center;
 }
 
@@ -113,20 +113,20 @@
   a {
     display: inline-block;
     padding: 0 15px;
-    color: rgb(252, 100, 35);
-    border: 1px solid rgb(252, 100, 35);
+    color: $feed-link;
+    border: 1px solid $feed-link-border;
     border-radius: 4px;
 
     i {
-      color: rgb(252, 100, 35);
+      color: $feed-link;
       font-size: 14px;
     }
 
     &:hover {
-      color:white;
-      background: rgb(252, 100, 35);
+      color: $feed-link-hover;
+      background: $feed-link-hbg;
 
-      i { color: white; }
+      i { color: $feed-link-two; }
     }
   }
 }
@@ -138,7 +138,7 @@
   vertical-align: middle;
   margin-right: 10px;
   margin-bottom: 10px;
-  border-bottom-color: $black-light;
+  border-bottom-color: $author-links;
   font-size: 13px;
 
   &:before {
@@ -165,7 +165,7 @@
   border-bottom: 1px solid transparent;
   font-size: 15px;
 
-  &:hover { color: $whitesmoke; }
+  &:hover { color: $sidebar-head-hover; }
 }
 .page-post-detail .sidebar-nav-toc { padding: 0 5px; }
 
@@ -189,7 +189,7 @@
 
 .post-toc-empty {
   font-size: 14px;
-  color: $grey-dim;
+  color: $sidebar-toc-empty;
 }
 
 .post-toc ol {
@@ -201,9 +201,9 @@
   font-size: 14px;
 
   a {
-    color: $grey-dark;
+    color: $sidebar-toc-color;
     &:hover {
-      color: $grey-light;
+      color: $sidebar-toc-hover;
     }
   }
 }
@@ -217,7 +217,7 @@
   & > .nav-item { display: block; }
 }
 
-.post-toc .nav .active > a { color: $grey-light; }
+.post-toc .nav .active > a { color: $sidebar-toc-parent; }
 
 .post-toc .nav .active-current > a {
   color: $sidebar-highlight;

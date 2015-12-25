@@ -25,7 +25,7 @@
     +mobile() { font-size: $font-size-headings-smaller; }
     +desktop-large() { font-size: $font-size-headings-large; }
   }
-  .post-title:hover:before { background: $black-deep; }
+  .post-title:hover:before { background: $post-title-hover; }
 
   .post-body img { margin: 0; }
 
@@ -33,10 +33,10 @@
     text-align: left;
     a {
       padding: 1px 5px;
-      background: $whitesmoke;
+      background: $tagbg;
       border-bottom: none;
     }
-    a:hover { background: $grey-light; }
+    a:hover { background: $tag-hover; }
   }
   .post-nav { margin-top: 40px; }
 }
@@ -48,16 +48,16 @@
   a {
     padding: 0;
     font-size: $font-size-base;
-    color: $grey-dim;
+    color: $more-color;
     background: none;
     border: none;
-    border-bottom: 2px solid $grey-dim;
+    border-bottom: 2px solid $more-underline;
     transition-property: border;
 
     +mobile() { font-size: $font-size-small; }
     +desktop-large() { font-size: $font-size-large; }
 
 
-    &:hover { border-bottom-color: $black-deep; }
+    &:hover { border-bottom-color: $more-underhover; }
   }
 }

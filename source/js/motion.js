@@ -247,6 +247,7 @@ $(document).ready(function () {
       }
     },
 
+    /*
     menu: function (integrator) {
       $('.menu-item').velocity('transition.slideDownIn', {
         display: null,
@@ -275,6 +276,7 @@ $(document).ready(function () {
         $post.velocity('transition.slideDownIn', postMotionOptions);
       }
     },
+    */
 
     sidebar: function (integrator) {
       if (CONFIG.sidebar === 'always') {

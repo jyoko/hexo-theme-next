@@ -21,7 +21,7 @@
 
     h2 { margin-left: 20px; }
 
-    small { color: $grey; }
+    small { color: $history-circle; }
 
     &::before {
       content: " ";
@@ -32,7 +32,7 @@
       margin-top: -4px;
       width: 8px;
       height: 8px;
-      background: $grey;
+      background: $history-circle;
       circle();
     }
   }
@@ -43,7 +43,7 @@
     position: relative;
     the-transition();
     transition-property: border;
-    border-bottom: 1px dashed $grey-light;
+    border-bottom: 1px dashed $history-line;
 
     &::before {
       content: " ";
@@ -53,18 +53,18 @@
       width: 6px;
       height: 6px;
       margin-left: -4px;
-      background: $grey;
+      background: $history-circle;
       circle();
-      border: 1px solid white;
+      border: 1px solid $history-circle;
       the-transition();
       transition-property: background;
     }
   }
 
   .post-header:hover {
-    border-bottom-color: $grey-dim;
+    border-bottom-color: $history-line-hover;
 
-    &::before { background: $black-deep; }
+    &::before { border-color: $history-circle-hover; background: $history-circle-hover; }
   }
 
   .post-meta {
@@ -89,7 +89,7 @@
     }
 
     a {
-      color: $grey-dim;
+      color: $title-timeline;
       border-bottom: none;
     }
   }
