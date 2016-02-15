@@ -27,10 +27,10 @@ rss:
 # Remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  categories: /categories
+  #categories: /categories
   #about: /about
   archives: /archives
-  tags: /tags
+  #tags: /tags
   #commonweal: /404.html
 
 
@@ -72,14 +72,14 @@ scheme: Mist
 #  - hide    expand only when click on the sidebar toggle icon.
 #  - remove  Totally remove sidebar including sidebar toggle icon.
 #sidebar: post
-sidebar: always
+#sidebar: always
 #sidebar: hide
-#sidebar: remove
+sidebar: remove
 
 
 # Social links
-# social:
-  #GitHub:
+social:
+  GitHub: https://github.com/jyoko
   #Others:
 
 # Social Icons
@@ -92,7 +92,7 @@ social_icons:
 
 
 # Sidebar Avatar
-avatar: images/test.png
+avatar: images/smileybeard.png
 
 
 # Social links
@@ -144,7 +144,7 @@ scroll_to_more: true
 # Automatically Excerpt
 auto_excerpt:
   enable: true
-  length: 250
+  length: 300
 
 # Use Lato font
 use_font_lato: true
